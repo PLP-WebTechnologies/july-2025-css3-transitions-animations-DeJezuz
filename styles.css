@@ -1,0 +1,49 @@
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Part 1: CSS Transitions & Keyframes */
+.hover-button {
+  padding: 1rem 2rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.hover-button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.1);
+}
+
+/* Animated box */
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 2rem auto;
+  transition: transform 0.5s ease;
+}
+.box.animate {
+  transform: rotate(360deg) scale(1.5);
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: white;
+  padding: 2rem;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0;
+}
+.modal.show {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
