@@ -3,24 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS3 Animations & JS Functions</title>
+  <title>CSS3 + JS Animations</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Interactive Animation Demo</h1>
+  <h1>Interactive Animation Showcase</h1>
 
-  <!-- Part 1: CSS Transitions & Animations -->
-  <button class="animated-button">Hover Me</button>
-  <div class="box" id="animated-box"></div>
+  <!-- Part 1: CSS-only animation -->
+  <button class="hover-button">Hover Me</button>
 
-  <!-- Part 2: JavaScript Functions -->
-  <section>
-    <h2>Function Output</h2>
-    <p id="function-output"></p>
-  </section>
+  <!-- Part 2 & 3: JS-triggered animation -->
+  <div class="box" id="animateBox"></div>
+  <button onclick="triggerBoxAnimation()">Animate Box</button>
 
-  <!-- Part 3: JS + CSS Animation Trigger -->
-  <button id="trigger-animation">Animate Box</button>
+  <!-- Modal example -->
+  <button onclick="toggleModal()">Toggle Modal</button>
+  <div class="modal" id="modal">
+    <p>This is a modal popup!</p>
+    <button onclick="toggleModal()">Close</button>
+  </div>
 
   <script src="script.js"></script>
 </body>
